@@ -1,20 +1,22 @@
 <template>
-  <div class="container-fluid col-10 border border-success">
-    <div class="row justify-content-center">
-      <h1>My Todo App</h1>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-3">
-        <TodoLists />
-      </div>
-      <div class="col-12 col-md-9">
-        <ActiveTodoList />
-      </div>
-    </div>
-  </div>
+  <v-content>
+    <v-container class="fill-height" fluid>
+      <v-row align="center" justify="center">
+        <v-col cols="12" sm="8" md="4">
+          <TodoLists />
+        </v-col>
+      </v-row>
+      <v-row align="center" justify="center">
+        <v-col cols="12" sm="8" md="4">
+          <ActiveTodoList />
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-content>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import TodoLists from './TodoLists'
 import ActiveTodoList from './ActiveTodoList'
 
@@ -23,22 +25,11 @@ export default {
   components: {
     TodoLists,
     ActiveTodoList
+  },
+  computed: {
+    ...mapGetters({
+      activeTodos: 'todos/activeTodos'
+    })
   }
 }
 </script>
-
-<style scoped>
-h1 {
-  font-size: 6vw;
-}
-
-div {
-  border: 1px dashed red;
-}
-li {
-  list-style-type: none;
-}
-ul {
-  border: 1px dashed red;
-}
-</style>

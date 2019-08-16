@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1 class="red">Hello !</h1>
-  </div>
+  <h1 class="red">Hello !</h1>
 </template>
 
 <script>
@@ -9,9 +7,3 @@ export default {
   layout: 'nav'
 }
 </script>
-
-<style>
-.red {
-  color: red;
-}
-</style>

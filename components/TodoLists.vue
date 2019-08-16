@@ -1,10 +1,16 @@
 <template>
-  <div>
-    <h2>Todo lists</h2>
-    <ul>
-      <li v-for="title in allLists" :key="title.id">{{ title.todoTitle }}</li>
-    </ul>
-  </div>
+  <v-card class="elevation-12">
+    <div class="primary headline text-center">Categories</div>
+    <v-card-text align="center">
+      <li
+        v-for="todo in allLists"
+        :key="todo.id"
+        :class="{ strike: todo.done }"
+      >
+        {{ todo.todoTitle }}
+      </li>
+    </v-card-text>
+  </v-card>
 </template>
 
 <script>

@@ -1,18 +1,19 @@
 <template>
-  <div>
-    <AddTodo />
-    <div class="row">
-      <ul>
-        <li
-          v-for="todo in activeTodos"
-          :key="todo.id"
-          :class="{ strike: todo.done }"
-        >
-          {{ todo.description }}
-        </li>
-      </ul>
-    </div>
-  </div>
+  <v-card class="elevation-12">
+    <div class="primary headline text-center">Active Todo list</div>
+    <v-card-text align="center">
+      <li
+        v-for="todo in activeTodos"
+        :key="todo.id"
+        :class="{ strike: todo.done }"
+      >
+        {{ todo.description }}
+      </li>
+    </v-card-text>
+    <v-card-actions>
+      <AddTodo />
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script>
@@ -32,12 +33,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-h2 {
-  font-size: 4vw;
-}
-.strike {
-  text-decoration: line-through;
-}
-</style>
