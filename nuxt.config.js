@@ -16,7 +16,14 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -41,7 +48,7 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['nuxt-material-design-icons'],
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
