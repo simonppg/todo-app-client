@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
 
       <v-toolbar-items>
-        <v-btn text> <nuxt-link to="/about">About</nuxt-link> </v-btn>
+        <v-btn text> <nuxt-link to="/test">test</nuxt-link> </v-btn>
       </v-toolbar-items>
     </v-app-bar>
   </div>
