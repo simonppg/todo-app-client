@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <ToolBar />
-    <nuxt />
+    <v-content>
+      <nuxt />
+    </v-content>
   </v-app>
 </template>
 
