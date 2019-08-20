@@ -11,7 +11,38 @@ const state = () => ({
     {
       todoTitle: 'School',
       active: false,
-      todos_list: [{ description: 'math homework', done: false }]
+      todos_list: [
+        { description: 'math homework', done: false },
+        { description: 'homework hard', done: true },
+        { description: 'Work homework', done: false }
+      ]
+    },
+    {
+      todoTitle: 'School',
+      active: false,
+      todos_list: [
+        { description: 'math homework', done: false },
+        { description: 'homework hard', done: true },
+        { description: 'Work homework', done: false }
+      ]
+    },
+    {
+      todoTitle: 'School',
+      active: false,
+      todos_list: [
+        { description: 'math homework', done: false },
+        { description: 'homework hard', done: true },
+        { description: 'Work homework', done: false }
+      ]
+    },
+    {
+      todoTitle: 'School',
+      active: false,
+      todos_list: [
+        { description: 'math homework', done: false },
+        { description: 'homework hard', done: true },
+        { description: 'Work homework', done: false }
+      ]
     }
   ]
 })
@@ -19,7 +50,8 @@ const state = () => ({
 const getters = {
   allLists: (state) => state.todoLists.map(({ todoTitle }) => ({ todoTitle })),
   activeTodos: (state) =>
-    state.todoLists.find((value) => value.active === true).todos_list
+    state.todoLists.find((value) => value.active === true).todos_list,
+  list_of_todos: (state) => state.todoLists
 }
 
 const actions = {
