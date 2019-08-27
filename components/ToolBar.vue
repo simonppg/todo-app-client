@@ -7,7 +7,6 @@
     <v-spacer />
 
     <v-toolbar-items>
-      <v-btn text to="/vuetify" nuxt>vuetify</v-btn>
       <v-btn text to="/test" nuxt>test</v-btn>
     </v-toolbar-items>
   </v-app-bar>
