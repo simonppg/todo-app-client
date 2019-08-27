@@ -1,6 +1,7 @@
 const state = () => ({
   todoLists: [
     {
+      id: 1,
       todoTitle: 'Work',
       active: true,
       todos_list: [
@@ -9,7 +10,8 @@ const state = () => ({
       ]
     },
     {
-      todoTitle: 'School',
+      id: 2,
+      todoTitle: 'School1',
       active: false,
       todos_list: [
         { description: 'math homework', done: false },
@@ -18,7 +20,8 @@ const state = () => ({
       ]
     },
     {
-      todoTitle: 'School',
+      id: 3,
+      todoTitle: 'School2',
       active: false,
       todos_list: [
         { description: 'math homework', done: false },
@@ -27,7 +30,8 @@ const state = () => ({
       ]
     },
     {
-      todoTitle: 'School',
+      id: 4,
+      todoTitle: 'School3',
       active: false,
       todos_list: [
         { description: 'math homework', done: false },
@@ -36,7 +40,8 @@ const state = () => ({
       ]
     },
     {
-      todoTitle: 'School',
+      id: 5,
+      todoTitle: 'School4',
       active: false,
       todos_list: [
         { description: 'math homework', done: false },
