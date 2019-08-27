@@ -1,17 +1,16 @@
 <template>
-  <div>
-    <v-app-bar app>
-      <v-toolbar-title>
-        <nuxt-link to="/">Todo app</nuxt-link>
-      </v-toolbar-title>
+  <v-app-bar app>
+    <v-toolbar-title>
+      <v-btn text to="/" nuxt>Home</v-btn>
+    </v-toolbar-title>
 
-      <v-spacer></v-spacer>
+    <v-spacer />
 
-      <v-toolbar-items>
-        <v-btn text> <nuxt-link to="/test">test</nuxt-link> </v-btn>
-      </v-toolbar-items>
-    </v-app-bar>
-  </div>
+    <v-toolbar-items>
+      <v-btn text to="/vuetify" nuxt>vuetify</v-btn>
+      <v-btn text to="/test" nuxt>test</v-btn>
+    </v-toolbar-items>
+  </v-app-bar>
 </template>
 
 <script>
